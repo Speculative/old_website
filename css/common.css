@@ -12,7 +12,9 @@
 }
 
 body {
-	font-family: Helvetica, sans-serif;
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+	text-shadow: rgba(255, 255, 255, .01) 0 0 1px;
+	-webkit-font-smoothing: antialiased;
 	color: #FFFFFF;
 	background: #444444;
 }
@@ -78,6 +80,7 @@ nav {
 	
 	article p {
 		font-size: 1em;
+		line-height: 1.3em;
 	}
 }
 
@@ -130,7 +133,8 @@ article p + p {
 
 article a, article a:visited {
 	color: inherit;
-	transition: background-color .1s ease-in-out;
+	background-color: #777777;
+	transition: background-color .2s ease-in-out;
 }
 
 article a:hover, article a:active {
@@ -149,6 +153,7 @@ article pre {
 	border: 1px solid;
 	padding: 10px;
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 	tab-size: 4;
 }
 
@@ -156,4 +161,5 @@ footer {
 	width: 100%;
 	text-align: center;
 	font-size: .8em;
+	background-color: #DDDDDD;
 }
