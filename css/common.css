@@ -41,10 +41,38 @@ nav {
 	background-color: #CCCCCC;
 }
 
+@media (min-width: 600px) {
+	nav ul {
+		width: 400px;
+	}
+	
+	nav ul a {
+		width: 100px;
+	}
+	
+	article p {
+		font-size: 1.1em;
+	}
+}
+
+@media (max-width: 600px) {
+	nav ul {
+		width: 100%;
+	}
+	
+	nav li {
+		display: block;
+		width: 100%;
+	}
+	
+	article p {
+		font-size: 1em;
+	}
+}
+
 nav ul {
 	margin-left: auto;
 	margin-right: auto;
-	width: 400px;
 	height: 30px;
 	list-style: none;
 }
@@ -58,7 +86,6 @@ nav ul a {
 	display: block;
 	padding: 5px;
 	text-decoration: none;
-	width: 100px;
 	color: #000000;
 	font-weight: bold;
 	transition: color .2s ease-in-out,
@@ -87,9 +114,7 @@ article h1 {
 	font-size: 2.5em;
 }
 
-article p {
-	font-size: 1.3em;
-}
+
 
 article p + p {
 	margin-top: .5em;
@@ -108,4 +133,15 @@ article ul {
 	list-style: square;
 	margin-left: 50px;
 	margin-right: 50px;
+}
+
+article pre {
+	overflow: auto;
+	tab-size: 4;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	font-size: .8em;
 }
