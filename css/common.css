@@ -11,11 +11,16 @@
 	background-color: #444444;
 }
 
+html {
+	height: 100%;
+}
+
 body {
+	height: 100%;
 	font-family: 'Ubuntu', Helvetica, sans-serif;
 	text-shadow: rgba(255, 255, 255, .01) 0 0 1px;
 	-webkit-font-smoothing: antialiased;
-	color: #FFFFFF;
+	color: #EEEEEE;
 	background: #444444;
 }
 
@@ -43,7 +48,7 @@ nav {
 	margin-right: auto;
 	margin-bottom: 20px;
 	text-align: center;
-	background-color: #CCCCCC;
+	background-color: #DDDDDD;
 }
 
 @media (min-width: 600px) {
@@ -100,19 +105,27 @@ nav ul a {
 	display: block;
 	padding: 5px;
 	text-decoration: none;
-	color: #000000;
+	color: #444444;
 	font-weight: bold;
 	transition: color .2s ease-in-out,
 		background .2s ease-in-out;
 }
 
 nav ul a:visited {
-	color: #000000;
+	color: #444444;
 }
 
 nav ul a:hover, nav ul a:active {
 	color: #FFFFFF;
-	background-color: #666666;
+	background-color: #555555;
+}
+
+/**
+ * For sticky footer
+ */
+#main {
+	min-height: 100%;
+	overflow: auto;
 }
 
 article {
@@ -120,6 +133,7 @@ article {
 	margin-right: auto;
 	width: 100%;
 	max-width: 800px;
+	padding-bottom: 100px;
 }
 
 article h1 {
@@ -133,12 +147,13 @@ article p + p {
 
 article a, article a:visited {
 	color: inherit;
-	background-color: #777777;
-	transition: background-color .2s ease-in-out;
+	background-color: #666666;
+	transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 article a:hover, article a:active {
-	background-color: purple;
+	color: #222222;
+	background-color: #DDDDDD;
 }
 
 article ul {
@@ -158,8 +173,15 @@ article pre {
 }
 
 footer {
+	position: relative;
+	height: 50px;
+	margin-top: -50px;
+	clear: both;
 	width: 100%;
 	text-align: center;
 	font-size: .8em;
+	font-style: italic;
 	background-color: #DDDDDD;
+	color: #444444;
+	line-height: 50px;
 }
