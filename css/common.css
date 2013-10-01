@@ -6,49 +6,8 @@
 	box-sizing: border-box;
 }
 
-::selection {
-	color: #DDDDDD;
-	background-color: #444444;
-}
-
 html {
 	height: 100%;
-}
-
-body {
-	height: 100%;
-	font-family: 'Ubuntu', Helvetica, sans-serif;
-	text-shadow: rgba(255, 255, 255, .01) 0 0 1px;
-	-webkit-font-smoothing: antialiased;
-	color: #EEEEEE;
-	background: #444444;
-}
-
-#logo {
-	display: block;
-	width: 75px;
-	height: 75px;
-	margin-left: auto;
-	margin-right: auto;
-	background-image: url("../logo.png");
-}
-
-#logo img {
-	visibility: hidden;
-}
-
-#logo:hover {
-	background-image: url("../logo_hover.png");
-}
-
-nav {
-	width: 100%;
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	text-align: center;
-	background-color: #DDDDDD;
 }
 
 @media (min-width: 600px) {
@@ -80,13 +39,221 @@ nav {
 	}
 	
 	article {
-		padding: 10px;
+		padding: 20px;
 	}
 	
 	article p {
 		font-size: 1em;
 		line-height: 1.3em;
 	}
+}
+
+article a, article a:visited {
+	color: inherit;
+	transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+article a:hover, article a:active {
+	color: #222222;
+	background-color: #DDDDDD;
+}
+
+::selection {
+	color: #DDDDDD;
+	background-color: #5599AA;
+}
+
+body {
+	height: 100%;
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+	text-shadow: rgba(255, 255, 255, .01) 0 0 1px;
+	-webkit-font-smoothing: antialiased;
+	color: #EEEEEE;
+	background: #333333;
+}
+
+/**
+ * For sticky footer
+ */
+#main {
+	min-height: 100%;
+	overflow: auto;
+}
+
+article {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 800px;
+	padding-bottom: 100px;
+}
+
+h1#vanity {
+	font-size: 2.5em;
+	text-align: center;
+	text-shadow: 1px;
+}
+
+#resume {
+	display: block;
+	width: 200px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section {
+	border: 1px solid;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #CCCCCC;
+}
+
+section h1 {
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.5em;
+	background-color: #446688;
+}
+
+section h2 {
+	margin-left: 40px;
+	margin-right: 40px;
+	color: #222222;
+	font-size: 1em;
+}
+
+section p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	color: #222222;
+}
+
+section p + p {
+	margin-top: .5em;
+}
+
+section ul {
+	list-style: square;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.important {
+	font-weight: bold;
+}
+
+footer {
+	position: relative;
+	height: 300px;
+	margin-top: -20px;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	font-size: .9em;
+	font-style: italic;
+	background-color: #DDDDDD;
+	color: #444444;
+	box-shadow: inset 0px 20px 0px #BBBBBB;
+}
+
+footer a, footer a:visited {
+	color: inherit;
+	text-decoration: none;
+	font-style: normal;
+}
+
+footer #container {
+	width: 800px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
+
+footer #container div {
+	padding: 10px;
+}
+
+footer #links {
+	float: left;
+	width: 350px;
+	height: inherit;
+	font-style: normal;
+}
+
+footer #links ul {
+	list-style: none;
+}
+footer #links li {
+	width: inherit;
+	font-size: 1.3em;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #BBBBBB;
+	transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+footer #links li:hover {
+	background-color: #FFFFFF;
+}
+
+footer #bio {
+	float: left;
+	width: 300px;
+	height: inherit;
+	text-align: justify;
+	text-justify: newspaper;
+}
+
+footer #bio p + p{
+	margin-top: .5em;
+}
+
+footer #self {
+	float: left;
+	width: 150px;
+	height: inherit;
+}
+
+footer #self a {
+	text-decoration: underline;
+}
+
+
+/**
+ * DEPRECATED
+ */
+
+ /*
+#logo {
+	display: block;
+	width: 75px;
+	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../logo.png");
+}
+
+#logo img {
+	visibility: hidden;
+}
+
+#logo:hover {
+	background-image: url("../logo_hover.png");
+}
+
+nav {
+	width: 100%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #DDDDDD;
 }
 
 nav ul {
@@ -119,69 +286,4 @@ nav ul a:hover, nav ul a:active {
 	color: #FFFFFF;
 	background-color: #555555;
 }
-
-/**
- * For sticky footer
- */
-#main {
-	min-height: 100%;
-	overflow: auto;
-}
-
-article {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	max-width: 800px;
-	padding-bottom: 100px;
-}
-
-article h1 {
-	text-align: center;
-	font-size: 2.5em;
-}
-
-article p + p {
-	margin-top: .5em;
-}
-
-article a, article a:visited {
-	color: inherit;
-	background-color: #666666;
-	transition: background-color .2s ease-in-out, color .2s ease-in-out;
-}
-
-article a:hover, article a:active {
-	color: #222222;
-	background-color: #DDDDDD;
-}
-
-article ul {
-	list-style: square;
-	margin-left: 50px;
-	margin-right: 50px;
-}
-
-article pre {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 1px solid;
-	padding: 10px;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	tab-size: 4;
-}
-
-footer {
-	position: relative;
-	height: 50px;
-	margin-top: -50px;
-	clear: both;
-	width: 100%;
-	text-align: center;
-	font-size: .8em;
-	font-style: italic;
-	background-color: #DDDDDD;
-	color: #444444;
-	line-height: 50px;
-}
+*/
