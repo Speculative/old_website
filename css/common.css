@@ -10,7 +10,7 @@ html {
 	height: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	nav ul {
 		width: 400px;
 	}
@@ -28,7 +28,7 @@ html {
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	nav ul {
 		width: 100%;
 	}
@@ -45,6 +45,24 @@ html {
 	article p {
 		font-size: 1em;
 		line-height: 1.3em;
+	}
+	
+	footer {
+		height: auto !important;
+	}
+	
+	footer #container {
+		width: 350px !important;
+		height: auto !important;
+		overflow: hidden;
+	}
+	
+	#links, #bio, #self {
+		margin-left: auto;
+		margin-right: auto;
+		width: inherit !important;
+		clear: both;
+		height: auto !important;
 	}
 }
 
@@ -111,7 +129,7 @@ section {
 
 section h1 {
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.8em;
 	line-height: 1.5em;
 	background-color: #446688;
 }
@@ -217,6 +235,10 @@ footer #self {
 	float: left;
 	width: 150px;
 	height: inherit;
+}
+
+footer #self img {
+	clear: both;
 }
 
 footer #self a {
