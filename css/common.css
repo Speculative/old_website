@@ -92,7 +92,8 @@ body {
 	text-shadow: rgba(255, 255, 255, .01) 0 0 1px;
 	-webkit-font-smoothing: antialiased;
 	color: #EEEEEE;
-	background: #333333;
+	background: linear-gradient(#333333, #222222);
+	background-attachment: fixed;
 }
 
 /**
