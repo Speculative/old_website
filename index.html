@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" href="css/common.css" media="screen">
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<link rel="stylesheet" href="/css/common.css" media="screen">
+	<link rel="stylesheet" href="/css/main.css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic|News+Cycle:700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
 	<meta name="viewport" content="initial-scale=1.0, max-scale=1.0, user-scalable=no">
 	<meta charset="utf-8">
 	<title>Jeffrey Tao</title>
@@ -12,107 +13,32 @@
 
 <body>
 	<div id="main">
-	<!--
-	<nav>
-		<a href="index.html" id="logo"><img src="logo.png"><img src="logo_hover.png"></a>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">R&eacute;sum&eacute;</a></li>
-			<li><a href="#">Posts</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</nav>
-	-->
-	
-	
+	<header>
+		<h1 id="vanity"><a href="./index.html">Jeffrey Tao</a></h1>
+		<h1 id="tagline">Student, Red Hat Intern, International Man of Mystery.</h1>
+	</header>
 	<article>
-		<h1 id="vanity">Jeffrey Tao</h1>
-		<a id="resume" href="./resume.pdf">Resume as PDF</a>
-		<section>
-			<h1>Objective</h1>
-			<p>
-				I am seeking an internship in web/software development
-				or computer engineering for the summer of 2014
-				(May through August).
-			</p>
+		<section id="blurb">
+			<img src="/images/profile.png">
+			<div id="about">
+				Hi there. I'm Jeff, a sophomore studying computer engineering at Columbia University.
+				I'm a board member of the Columbia IEEE chapter and technology officer of Columbia Anime Club.
+				This description should really be longer for the sake of aesthetics but I don't know what to write.
+				I'm part of the <a href="http://enigmasm.com/">EnigmaSM</a> team.
+				<a href="http://www.youtube.com/watch?v=RrHJP8zrbpg">Also I do poi.</a>
+                <br><br>
+                Check out my <a href="/blog/">blog</a>!
+			</div>
 		</section>
 		
-		<section>
-			<h1>Skills</h1>
-			<p>
-			Experience in: Java, Python (including NumPy/SciPy), C++,
-			Javascript, jQuery, Twitter Bootstrap, PHP, HTML, CSS,
-			Web Standards, Wordpress, LaTeX, UML, MATLAB, Data Structures,
-			MS Office
-			</p>
-			<p>
-			Knowledge of: git, Linux, Bash, cgroups, SQL, Cryptology,
-			Processing (MIT), Arduino,
-			</p>
-			<p>
-			Ability and willingness to quickly learn and apply new programming
-			languages and technologies
-			</p>
-		</section>
-		
-		<section>
-			<h1>Education</h1>
-			<p>
-			<span class="important">Columbia University - School of Engineering and Applied Science</span> <br>
-			Major: Computer Engineering, Sophomore <br>
-			Anticipated Graduation - May 2016 <br>
-			Overall GPA - 3.5 <br>
-			Courses include Introduction to Computing for Engineering and Applied Science, Introduction to Electrical Engineering, Object Oriented Programming and Design
-			</p>
-			
-			<p>
-			<span class="important">Science and Engineering Learning Center</span> <br>
-			Manalapan High School <br>
-			Graduated June 2012 <br>
-			Advanced Placement courses (AP Scholar with Distinction), Computer Science (C++, Java, Data Structures), Senior Design projects
-			</p>
-		</section>
-		
-		<section>
-			<h1>Experience</h1>
-			<p>
-			<span class="important">Red Hat Internship - RHEL Software Engineering Intern</span> <br>
-			(May 2013 - August 2013)<br>
-			Prototyped a GUI for a cgroups management tool (PyGTK) <br>
-			Developed a web interface for a kernel tuning tool (PHP, jQuery, Bootstrap, SQLite)
-			</p>
-
-			<p>
-			<span class="important">Lights in the Sky - Website Design & Backend Development</span> <br>
-			(May 2013 - Present)<br>
-			Personal project in collaboration with a friend <br>
-			Designed and implemented website from scratch (PHP, jQuery, HTML, CSS, OpenShift)
-			</span>
-			</p>
-			
-			<p>
-			<span class="important">Senior Design Projects - Computer Interfacing</span> <br>
-			(January 2012 - June 2012)<br>
-			Worked in a team of 3 to create a wireless inertial controller for 3-Dimensional positional input to a computer <br>
-			Designed one-way wireless protocol for communicating positional data <br>
-			Designed and developed software for visualization of positional control
-			</p>
-
-			<p>
-			<span class="important">Senior Design Projects - Robotics</span> <br>
-			(September 2011 - January 2012)<br>
-			Worked in a team of 3 to create a mobile, remotely controlled robot driven by an internal pendulum <br>
-			Wrote interface software for remote control of robot from a laptop over WLAN <br>
-			Was presented to  IEEE Jersey Coast section and received Science &amp; Engineering Student Achievement Award
-			</p>
-
-		</section>
-		
-		<section>
-			<h1>Interests</h1>
-			<p>
-			Web standards, design, and development; open source software
-			</p>
+		<section id="projects">
+			<ul>
+				<li><a href=""><img src="/images/litsky.png"></a><span>Lights in the Sky<span></li>
+				<li><a href=""><img src="/images/dgrdr.png"></a><span>Dgr_dr<span></li>
+				<li><a href=""><img src="/images/desktopload.png"></a><span>Desktopload<span></li>
+				<li><a href=""><img src="/images/ren5.png"></a><span>Ren5<span></li>
+				<li><a href=""><img src="/images/gameoflife.png"></a><span>HTML5 Canvas Game of Life<span></li>
+			</ul>
 		</section>
 	</article>
 	</div>
@@ -123,32 +49,26 @@
 				<ul>
 					<a href="./resume.pdf"><li>Resume</li></a>
 					<a href="https://github.com/Speculative"><li>Github</li></a>
-					<a href="#"><li>Personal Blog</li></a>
+					<a href="./blog/"><li>Personal Blog</li></a>
+					<a href="http://enigmasm.com/"><li>EnigmaSM</li></a>
 				</ul>
 			</div>
 			<div id="bio">
 				<p>
-				Jeff Tao is a sophomore at Columbia University in the School of
-				Engineering and Applied Science studying Computer Engineering.
+				Jeff Tao is a sophomore Computer Engineering student at
+				Columbia University.
 				He is an alumnus of the Science and Engineering program at
-				Manalapan High School and someday hopes to be a real engineer.
-				</p>
-				<p>
-				If this were a marketing site, he thinks his pitch would have
-				probably failed by now.
+				Manalapan High School.
 				</p>
 			</div>
 			<div id="self">
-				<img src="pic.png"> <br>
-				<a href="mailto:me@jefftao.com">me@jefftao.com</a>
+				<a href="mailto:me@jefftao.com">
+					<img src="jeffatar.png"> <br>
+					me@jefftao.com
+				</a>
 			</div>
 		</div>
 	</footer>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-		});
-	</script>
 	
 </body>
 

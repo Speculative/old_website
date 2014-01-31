@@ -1,6 +1,5 @@
 ---
 layout: ~
-title: Jeff Tao
 ---
 
 <!DOCTYPE html>
@@ -10,10 +9,9 @@ title: Jeff Tao
 	<link rel="stylesheet" href="/css/common.css" media="screen">
 	<link rel="stylesheet" href="/css/blog.css" media="screen">
 	<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic|News+Cycle:700' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
 	<meta name="viewport" content="initial-scale=1.0, max-scale=1.0, user-scalable=no">
 	<meta charset="utf-8">
-	<title>Jeffrey Tao</title>
+    <title>{{ page.title }}</title>
 </head>
 
 <body>
@@ -22,14 +20,9 @@ title: Jeff Tao
 		<h1 id="vanity"><a href="/index.html">Jeffrey Tao</a></h1>
 		<h1 id="tagline">Student, Red Hat Intern, International Man of Mystery.</h1>
 	</header>
-	<article>
-        {% for post in site.posts %}
-		<div class="post">
-            <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-            <h1 class="date">{{ post.date | date: "%B %-d, %Y" }}</h1>
-			<p class="summary">{{ post.excerpt }}</p>
-		</div>
-        {% endfor %}
+	<article id="post">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
 	</article>
 	</div>
 	
