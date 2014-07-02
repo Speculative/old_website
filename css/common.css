@@ -36,12 +36,14 @@ html {
 }
 
 article a, article a:visited {
-	color: #287D7D;
+	color: #91C46C;
+	/* #287D7D; */
 	transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 article a:hover, article a:active {
-	background-color: #C6E070;
+	background-color: #287D7D;
+	/* #C6E070; */
 }
 
 ::selection {
