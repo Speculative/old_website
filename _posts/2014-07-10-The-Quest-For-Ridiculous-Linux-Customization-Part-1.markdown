@@ -28,8 +28,10 @@ you're installing to. You can find that in Disk Management in the Control Panel
 on Windows. Right click your external, go to properties, and the name at the
 top is your model number. Write that down. It'll be important soon.
 
-Go ahead and download the [Fedora 20 Live ISO][1] and put it on some
-installable medium. Personally I prefer to use the [Live USB Creator][2].
+Go ahead and download the
+[Fedora 20 Live ISO](http://fedoraproject.org/en_GB/get-fedora "Fedora 20 Live ISO Download")
+and put it on some installable medium. Personally I prefer to use the
+[Live USB Creator](https://fedorahosted.org/liveusb-creator/ "Live USB Creator Download").
 If you hit an issue with Live USB Creator not recognizing your flash drive,
 you might have to open up a command line in the directory where Live USB
 Creator is located and run
@@ -38,9 +40,6 @@ Creator is located and run
 
 Substitute E:\ for whichever drive letter corresponds to your flash drive as
 necessary.
-	
-[1]: http://fedoraproject.org/en_GB/get-fedora "Fedora 20 Live ISO Download"
-[2]: https://fedorahosted.org/liveusb-creator/ "Live USB Creator Download"
 
 Next we're going to want to install Fedora 20 on the external drive. Plug in
 your flash drive with Fedora 20 Live on it as well as your external hard drive
@@ -53,12 +52,12 @@ you want to install to your hard disk. Go ahead and click that now to start up
 Anaconda, Fedora's installation program. Click through the language prompt to
 be greeted with the following screen:
 
-![Installation Summary][3]
+![Installation Summary](/images/blog/customization/install_summary.png)
 
 Most of that is pretty self explanatory, except the installation destination
 part. Click on that.
 
-![Installation Destination][4]
+![Installation Destination](/images/blog/customization/install_destination.png)
 
 This is where it gets a little tricky. I've only got one disk in that
 screenshot there, but you probably have more. You'll need to figure out which
@@ -72,14 +71,14 @@ I assume you probably don't want to devote this entire external disk to Linux,
 so we'll want to partition your disk so that part of it can be used as an
 OS-neutral data partition for storing things you like carrying around.
 
-[!Partition Format][5]
+![Partition Format](/images/blog/customization/install_partition_1.png)
 
 Click "Done" and select "I want to review/modify my disk partitions before
 continuing." Also, it should be the default, but if it isn't, you'll probably
 want your partition scheme to be LVM. You can skip this step and choose
 automatic partitioning if you don't want to have a separate data partition.
 
-[!Manual Partitioning][6]
+![Manual Partitioning](/images/blog/customization/install_partition_2.png)
 
 Click on "Click here to create them automatically" to have Anaconda
 make all of the important system mount points for you. If you want to use this
@@ -95,11 +94,6 @@ space later with Windows Disk Management to allocate it for data as an NTFS
 partition, and then you'll have a data partition that should work while you're
 in either operating system. When you're done with this, click Done and
 Accept Changes.
-
-[3]: [/images/blog/customization/install_summary.png]
-[4]: [/images/blog/customization/install_destination.png]
-[5]: [/images/blog/customization/install_partition_1.png]
-[6]: [/images/blog/customization/install_partition_2.png]
 
 Now that that part's done, the rest of the install is fairly easy. Click Begin
 Install and the installer will start to do its thing, writing the OS to your
