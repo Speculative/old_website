@@ -52,12 +52,12 @@ you want to install to your hard disk. Go ahead and click that now to start up
 Anaconda, Fedora's installation program. Click through the language prompt to
 be greeted with the following screen:
 
-![Installation Summary](/images/blog/customization/install_summary.png)
+<img src="/images/blog/customization/install_summary.png" alt="Installation Summary">
 
 Most of that is pretty self explanatory, except the installation destination
 part. Click on that.
 
-![Installation Destination](/images/blog/customization/install_destination.png)
+<img src="/images/blog/customization/install_destination.png" class="full-width" alt="Installation Destination">
 
 This is where it gets a little tricky. I've only got one disk in that
 screenshot there, but you probably have more. You'll need to figure out which
@@ -71,14 +71,14 @@ I assume you probably don't want to devote this entire external disk to Linux,
 so we'll want to partition your disk so that part of it can be used as an
 OS-neutral data partition for storing things you like carrying around.
 
-![Partition Format](/images/blog/customization/install_partition_1.png)
+<img src="/images/blog/customization/install_partition_1.png" class="full-width" alt="Partition Format">
 
 Click "Done" and select "I want to review/modify my disk partitions before
 continuing." Also, it should be the default, but if it isn't, you'll probably
 want your partition scheme to be LVM. You can skip this step and choose
 automatic partitioning if you don't want to have a separate data partition.
 
-![Manual Partitioning](/images/blog/customization/install_partition_2.png)
+<img src="/images/blog/customization/install_partition_2.png" class="full-width" alt="Manual Partitioning">
 
 Click on "Click here to create them automatically" to have Anaconda
 make all of the important system mount points for you. If you want to use this
@@ -111,7 +111,7 @@ Side note for the Yoga 2 Pro
 I'm actually not 100% sure if this applies to just the Yoga or to all Ideapads
 (I'm pretty sure it's the latter), but the first issue I hit on a fresh install
 of Fedora 20 is that wifi doesn't work right out of the box. Some googling
-reveals that the issue is a certain kernel module ideapad_laptop that's bugging
+reveals that the issue is a certain kernel module ideapad\_laptop that's bugging
 out and preventing wifi from working. We can fix that. Open up a terminal,
 
     sudo rmmod ideapad_laptop
@@ -137,7 +137,7 @@ and without having to reboot the system to take effect.
 We're not quite done yet. LKMs are loaded at every boot, so if we don't make
 Fedora stop trying to automatically load that module, we'll have no wifi every
 time we reboot and have to run that command again. We want to blacklist the 
-ideapad_laptop module. In a terminal,
+ideapad\_laptop module. In a terminal,
 
 	cd /etc/modprobe.d
 	su -c "echo blacklist ideapad_laptop > ideapad_laptop.conf"
@@ -180,11 +180,9 @@ and just *echoes* it to output. In this case, our input is
 "blacklist ideapad_laptop". echo takes that text and returns it to standard
 output.
 
-The > following "blacklist ideapad_laptop" is telling our shell to redirect
-standard output of echo to a file. " > ideapad_laptop.conf" writes stdout of
+The > following "blacklist ideapad\_laptop" is telling our shell to redirect
+standard output of echo to a file." > ideapad\_laptop.conf" writes stdout of
 echo to a file in the current directory.
 
 I think I'll wrap things up there for now. Next time, we get into the fun part:
 customizing!
-
-[The Quest For Ridiculous Linux Customization Part 2]
