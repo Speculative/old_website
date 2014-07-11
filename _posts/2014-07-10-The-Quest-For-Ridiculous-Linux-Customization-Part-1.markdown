@@ -36,7 +36,7 @@ If you hit an issue with Live USB Creator not recognizing your flash drive,
 you might have to open up a command line in the directory where Live USB
 Creator is located and run
 
-    liveusb-creator.exe --force F:\
+    liveusb-creator.exe --force E:\
 
 Substitute E:\ for whichever drive letter corresponds to your flash drive as
 necessary.
