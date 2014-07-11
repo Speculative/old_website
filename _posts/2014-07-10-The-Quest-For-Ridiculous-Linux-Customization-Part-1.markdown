@@ -52,7 +52,7 @@ you want to install to your hard disk. Go ahead and click that now to start up
 Anaconda, Fedora's installation program. Click through the language prompt to
 be greeted with the following screen:
 
-<img src="/images/blog/customization/install_summary.png" alt="Installation Summary">
+<img src="/images/blog/customization/install_summary.png" class="full-width" alt="Installation Summary">
 
 Most of that is pretty self explanatory, except the installation destination
 part. Click on that.

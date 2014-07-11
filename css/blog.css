@@ -86,7 +86,9 @@ article p + p {
 pre {
 	background: #DDDDDD;
 	width: 90%;
-	
+	margin-left: auto;
+	margin-right: auto;
+	overflow-x: auto;
 }
 
 code {
