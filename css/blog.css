@@ -23,6 +23,7 @@ article h1 {
 article h2 {
 	color: #91C46C;
 	font-size: 1.5em;
+	margin-top: 10px;
 }
 
 article img.full-width {
@@ -55,6 +56,16 @@ article p + p {
 	margin-top: .5em;
 }
 
+ul, ol {
+	color: #000000;
+	list-style-position: inside;
+	margin-left: 10px;
+}
+
+ul {
+	list-style-type: square;
+}
+
 #back {
 	font-size: 40px;	
 	color: #FFFFFF;
@@ -78,14 +89,19 @@ article p + p {
 	margin-top: 40px;
 }
 
+.post h2 {
+	margin-left: 10px;
+}
+
 .date {
 	font-size: 1em;
 	margin-left: 10px;
 }
 
 pre {
-	background: #DDDDDD;
+	background: #E0E0E0;
 	width: 90%;
+	padding: 5px;
 	margin-left: auto;
 	margin-right: auto;
 	overflow-x: auto;
