@@ -12,7 +12,7 @@ fine control over, and let me dictate my own arbitrary hotkeys.
 In case I miss anything, [bspwm for dummies][1] is a useful guide. A lot of
 this is almost copied verbatim from there.
 
-[1]: [https://github.com/windelicato/dotfiles/wiki/bspwm-for-dummies]
+[1]: https://github.com/windelicato/dotfiles/wiki/bspwm-for-dummies
 
 Alright let's get  serious. First we want to get some basic development tools
 installed on our system.
@@ -127,7 +127,7 @@ adventurous. We'll also install dmenu.
 
     sudo yum install dmenu
 
-[2]: [http://en.wikipedia.org/wiki/Run_commands]
+[2]: http://en.wikipedia.org/wiki/Run_commands
 
 Last setup step before we get on with the actual customization bit.  We want to
 add bspwm to our xsessions so that when we log in, we get a nice little dropdown
@@ -165,7 +165,7 @@ xrandr
 Most of this is from the [ArchWiki article on xrandr][3], reproduced here
 because things on the internet tend to go away sometimes.
 
-[3]: [https://wiki.archlinux.org/index.php/xrandr#Adding_undetected_resolutions]
+[3]: https://wiki.archlinux.org/index.php/xrandr#Adding_undetected_resolutions
 
 Generate a modeline:
 
@@ -211,7 +211,7 @@ You know the drill by now:
 And, as always, [ArchWiki has a good article on feh][4]. How you organize your
 wallpapers is up to you, but here's how I like to organize them:
 
-[4]: [https://wiki.archlinux.org/index.php/Feh]
+[4]: https://wiki.archlinux.org/index.php/Feh
 
     cd ~
     mkdir -p customization/wallpapers
@@ -237,7 +237,7 @@ and download wallpapers to your heart's content. Some websites that I browse:
 I also curate a [wallpaper blog][5] (kinda dead at the moment, with plans for
 revival).
 
-[5]: [http://somanywallpapers.tumblr.com/]
+[5]: http://somanywallpapers.tumblr.com/
 
 I think we'll wrap it up here. Next time we get into the fun customization bits!
 
