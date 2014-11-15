@@ -1,0 +1,38 @@
+dfn {
+    font-weight: bold;
+}
+
+ul {
+    list-style: square;
+}
+
+table.mapping {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+table.mapping tr {
+    border: 1px solid #000000;
+}
+
+table.mapping td {
+    border: 1px solid #000000;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+table.mapping th {
+    color: #C00;
+    border: 1px solid #000000;
+}
+
+.highlight {
+    color: #F00;
+    font-weight: bold;
+}
+
+code {
+    white-space: 
+    padding: 1em;
+    border: 1px solid #888;
+}
