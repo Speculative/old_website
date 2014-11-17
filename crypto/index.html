@@ -72,8 +72,8 @@
         <ul>
             <li class="slide">Based around integer division</li>
             <li class="slide">Notated as a &equiv; b (mod n) or a mod n = b</li>
-            <li class="slide">We say that a number is "congruent modulo n" if n/a = (something) + b</li>
-            <li class="slide">In other words, b is the <em>remainder</em> after we perform integer division of n by a</li>
+            <li class="slide">We say that a number is "congruent modulo n" if a/n = (something) + b</li>
+            <li class="slide">In other words, b is the <em>remainder</em> after we perform integer division of a by n</li>
             <li class="slide">We can also think of the numbers "wrapping around" to 0 when we count up to n, e.g. 5 mod 3 we would count 1, 2, 3, 4, 5 as 1, 2, 0, 1, 2</li>
             <li class="slide">You can intuitively confirm this with some quick mental math: <br>
                 5 = 3 &middot; 1 + 2, thus 5 &equiv; 2 (mod 3)</li>
@@ -95,7 +95,7 @@
             <li class="slide">One of the most basic kinds of ciphers</li>
             <li class="slide">Consists of an alphabetic "shift" of all of the letters in plaintext into the letters in ciphertext that "wraps around" the letter A</li>
             <li class="slide">We can think of this like being modular arithmetic. If we assign numbers 0 to 25 (26 in total) to the letters A-Z (i.e. A = 0, B = 1, ...) then a Caesar Shift of a plaintext letter whose number is n enciphers to ciphertext letter n + shift mod 26</li>
-            <li class="slide">For example, a shift of the letter C by 3 gives us F (C = 3; 3 + 3 = 6; F = 6)</li>
+            <li class="slide">For example, a shift of the letter C by 3 gives us F (C = 2; 2 + 3 = 5; F = 5)</li>
             <li class="slide">An example of wraparound: Shift X by 7 (X = 23; 23 + 7 mod 26 = 4; E = 4)</li>
             <li class="slide">We also refer to a shift of a certain number by the letter with that corresponding number (e.g. a Caesar Shift of 5 is called a Caesar F Shift)
         </ul>
@@ -119,7 +119,7 @@
             <li class="slide">We want to invert the encryption operation to decrypt ciphertext to plaintext</li>
             <li class="slide">To reverse the shift, we shift backwards instead of forwards</li>
             <li class="slide">So to reverse our Caesar D Cipher with ciphertext DSSOH:</li>
-            <li class="slide">D (3) - D (3) = 3 = A</li>
+            <li class="slide">D (3) - D (3) = 0 = A</li>
             <li class="slide">S (18) - D (3) = 15 = P</li>
             <li class="slide">O (14) - D (3) = 11 = L</li>
             <li class="slide">H (7) - D (3) = 4 = E</li>
@@ -157,12 +157,13 @@
             <li class="slide">To encipher, we would look up a plaintext letter and find the corresponding ciphertext letter</li>
             <li class="slide">To decipher, we look up a ciphertext letter and find the corresponding plaintext</li>
             <li class="slide">Unlike the Caesar Cipher, enciphering works through this lookup operation, rather than "shifting"</li>
+			<li class="slide">Any arrangement of letters can be used</li>
         </ul>
         <table class="slide mapping">
             <tr><th>Plaintext</th><th>Ciphertext</th></tr>
-            <tr><td>A</td><td>B</td></tr>
-            <tr><td>B</td><td>C</td></tr>
-            <tr><td>C</td><td>D</td></tr>
+            <tr><td>A</td><td>S</td></tr>
+            <tr><td>B</td><td>Q</td></tr>
+            <tr><td>C</td><td>C</td></tr>
         </table>
     </section>
 
@@ -170,6 +171,7 @@
     <section class="slide">
         <h2>Frequency Analysis</h2>
         <ul>
+			<li class="slide">Brute Force isn't viable here. How many inputs would we have to try for brute force?</li>
             <li class="slide">We can abuse the fact that certain letters in the English language appear more often than others</li>
             <li class="slide">For example, E is the most common letter in the English language</li>
             <li class="slide">Since the same plaintext letter always enciphers to the same ciphertext letter, the letter that occurs most frequently in the plaintext probably corresponds to the plaintext letter E</li>
