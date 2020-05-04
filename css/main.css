@@ -8,6 +8,7 @@ article section {
 	display: -webkit-flex;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 #blurb img {
@@ -19,9 +20,7 @@ article section {
 }
 
 #about {
-	float: left;
-	margin-left: 75px;
-	width: 450px;
+	width: 700px;
 }
 
 #projects {
